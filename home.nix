@@ -26,6 +26,7 @@
   home.packages = [
     pkgs.git
     pkgs.neovim
+    pkgs.tmux
     pkgs.ungoogled-chromium
   ];
 

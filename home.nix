@@ -38,6 +38,10 @@
     '';
   };
 
+  programs.exa = {
+    enable = true;
+  };
+
   programs.git = {
     enable = true;
     userEmail = "w32w64@gmail.com";

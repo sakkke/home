@@ -24,7 +24,6 @@
   };
 
   home.packages = [
-    pkgs.git
     pkgs.tmux
     pkgs.ungoogled-chromium
   ];

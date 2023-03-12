@@ -58,6 +58,7 @@
 
       call plug#begin()
 
+      Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
       Plug 'sheerun/vim-polyglot'
 
       call plug#end()
@@ -67,6 +68,14 @@
         silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
         autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
       endif
+
+      lua << /lua
+      require('catppuccin').setup({
+        flavour = 'macchiato',
+      })
+      /lua
+
+      colorscheme catppuccin
     '';
   };
 

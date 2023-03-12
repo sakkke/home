@@ -59,6 +59,8 @@
       call plug#begin()
 
       Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+      Plug 'nvim-lualine/lualine.nvim'
+        Plug 'kyazdani42/nvim-web-devicons'
       Plug 'sheerun/vim-polyglot'
 
       call plug#end()
@@ -73,6 +75,8 @@
       require('catppuccin').setup({
         flavour = 'macchiato',
       })
+
+      require('lualine').setup()
       /lua
 
       colorscheme catppuccin

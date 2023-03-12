@@ -25,7 +25,6 @@
 
   home.packages = [
     pkgs.git
-    pkgs.neovim
     pkgs.tmux
     pkgs.ungoogled-chromium
   ];
@@ -49,6 +48,14 @@
         defaultBranch = "main";
       };
     };
+  };
+
+  programs.neovim = {
+    enable = true;
+    extraConfig = ''
+      set number
+      set relativenumber
+    '';
   };
 
   programs.starship = {

@@ -62,6 +62,7 @@
       Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
         Plug 'kyazdani42/nvim-web-devicons'
       Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+      Plug 'editorconfig/editorconfig-vim'
       Plug 'nvim-lualine/lualine.nvim'
         Plug 'kyazdani42/nvim-web-devicons'
       Plug 'sheerun/vim-polyglot'

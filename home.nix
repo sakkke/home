@@ -22,6 +22,7 @@
   home.packages = [
     pkgs.git
     pkgs.neovim
+    pkgs.ungoogled-chromium
   ];
 
   programs.git = {

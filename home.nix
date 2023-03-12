@@ -21,6 +21,7 @@
 
   home.packages = [
     pkgs.git
+    pkgs.neovim
   ];
 
   programs.git = {

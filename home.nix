@@ -19,6 +19,10 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  home.sessionVariables = {
+    NIX_PATH = "nixpkgs=/home/sakkke/.nix-defexpr/channels/nixpkgs:home-manager=/home/sakkke/.nix-defexpr/channels/home-manager";
+  };
+
   home.packages = [
     pkgs.git
     pkgs.neovim

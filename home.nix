@@ -32,6 +32,9 @@
   programs.bash = {
     enable = true;
     bashrcExtra = ''
+      # Disable $SSH_ASKPASS
+      unset SSH_ASKPASS
+
       eval "$(starship init bash)"
     '';
   };

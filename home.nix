@@ -42,6 +42,9 @@
     userEmail = "w32w64@gmail.com";
     userName = "sakkke";
     extraConfig = {
+      credential = {
+        helper = "store";
+      };
       init = {
         defaultBranch = "main";
       };

@@ -94,4 +94,8 @@
     enable = true;
     settings = {};
   };
+
+  programs.wezterm = {
+    enable = true;
+  };
 }

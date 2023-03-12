@@ -77,11 +77,9 @@
 
       lua << /lua
       require('bufferline').setup()
-
       require('catppuccin').setup({
         flavour = 'macchiato',
       })
-
       require('lualine').setup()
       /lua
 

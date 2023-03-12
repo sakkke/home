@@ -55,9 +55,12 @@
     extraConfig = ''
       set number
       set relativenumber
+      set termguicolors
 
       call plug#begin()
 
+      Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+        Plug 'kyazdani42/nvim-web-devicons'
       Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
       Plug 'nvim-lualine/lualine.nvim'
         Plug 'kyazdani42/nvim-web-devicons'
@@ -72,6 +75,8 @@
       endif
 
       lua << /lua
+      require('bufferline').setup()
+
       require('catppuccin').setup({
         flavour = 'macchiato',
       })

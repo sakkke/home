@@ -40,6 +40,11 @@
     enable = true;
     userEmail = "w32w64@gmail.com";
     userName = "sakkke";
+    extraConfig = {
+      init = {
+        defaultBranch = "main";
+      };
+    };
   };
 
   programs.starship = {

@@ -25,9 +25,21 @@
     pkgs.ungoogled-chromium
   ];
 
+  programs.bash = {
+    enable = true;
+    bashrcExtra = ''
+      eval "$(starship init bash)"
+    '';
+  };
+
   programs.git = {
     enable = true;
     userEmail = "w32w64@gmail.com";
     userName = "sakkke";
+  };
+
+  programs.starship = {
+    enable = true;
+    settings = {};
   };
 }

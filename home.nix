@@ -142,4 +142,8 @@
       }
     '';
   };
+
+  programs.zsh = {
+    enable = true;
+  };
 }

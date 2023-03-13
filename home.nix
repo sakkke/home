@@ -89,6 +89,10 @@
     '';
   };
 
+  programs.lazygit = {
+    enable = true;
+  };
+
   programs.neovim = {
     enable = true;
     extraConfig = ''

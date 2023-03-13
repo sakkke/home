@@ -42,6 +42,10 @@
     enable = true;
   };
 
+  programs.fzf = {
+    enable = true;
+  };
+
   programs.git = {
     enable = true;
     userEmail = "w32w64@gmail.com";
@@ -145,5 +149,26 @@
 
   programs.zsh = {
     enable = true;
+    initExtra = ''
+      fzf-z() {
+        temp="$(mktemp --suffix=fzf-z)"
+        jobs -l > "$temp"
+        list="$(< "$temp")"
+        rm "$temp"
+        pid="$(printf %s "$list" \
+          | fzf -0 -1 \
+          | tr -d '[]')"
+
+        if [ -z "$pid" ]; then
+          return
+        fi
+
+        %"$pid"
+      }
+
+      zle -N fzf-z
+
+      bindkey '^Z' fzf-z
+    '';
   };
 }

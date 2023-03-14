@@ -147,6 +147,7 @@
       nnoremap <silent> <LocalLeader> :<C-u>WhichKey ','<CR>
 
       nnoremap <silent> <Leader><Space> :w<CR>
+      nnoremap <silent> <Leader>gg <Cmd>FloatermNew gitui<CR>
     '';
   };
 

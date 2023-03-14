@@ -138,6 +138,8 @@
 
       nnoremap <silent> <Leader> :<C-u>WhichKey '<Space>'<CR>
       nnoremap <silent> <LocalLeader> :<C-u>WhichKey ','<CR>
+
+      nnoremap <silent> <Leader><Space> :w<CR>
     '';
   };
 

@@ -203,6 +203,8 @@
         { name = "hlissner/zsh-autopair"; }
         { name = "marlonrichert/zsh-autocomplete"; }
         { name = "zsh-users/zsh-autosuggestions"; }
+
+        # Lazy loading
         { name = "zsh-users/zsh-syntax-highlighting"; }
       ];
     };

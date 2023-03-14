@@ -160,6 +160,7 @@
       nnoremap <silent> <Leader><Space> :w<CR>
       nnoremap <silent> <Leader>e <Cmd>NvimTreeToggle<CR>
       nnoremap <silent> <Leader>gg <Cmd>FloatermNew gitui<CR>
+      nnoremap <silent> <Leader>pi <Cmd>PlugInstall<CR>
     '';
   };
 

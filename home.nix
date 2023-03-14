@@ -114,6 +114,7 @@
       Plug 'lukas-reineke/indent-blankline.nvim'
       Plug 'nvim-lualine/lualine.nvim'
         Plug 'kyazdani42/nvim-web-devicons'
+      Plug 'nvim-tree/nvim-tree.lua'
       Plug 'sheerun/vim-polyglot'
       Plug 'voldikss/vim-floaterm'
       Plug 'windwp/nvim-autopairs'
@@ -136,6 +137,7 @@
       require('indent_blankline').setup({})
       require('lualine').setup()
       require('nvim-autopairs').setup({})
+      require('nvim-tree').setup({})
       /lua
 
       colorscheme catppuccin
@@ -155,6 +157,7 @@
       nnoremap <silent> <LocalLeader> :<C-u>WhichKey ','<CR>
 
       nnoremap <silent> <Leader><Space> :w<CR>
+      nnoremap <silent> <Leader>e <Cmd>NvimTreeToggle<CR>
       nnoremap <silent> <Leader>gg <Cmd>FloatermNew gitui<CR>
     '';
   };

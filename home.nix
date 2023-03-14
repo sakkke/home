@@ -113,6 +113,7 @@
       Plug 'nvim-lualine/lualine.nvim'
         Plug 'kyazdani42/nvim-web-devicons'
       Plug 'sheerun/vim-polyglot'
+      Plug 'windwp/nvim-autopairs'
 
       call plug#end()
 
@@ -129,6 +130,7 @@
         transparent_background = true,
       })
       require('lualine').setup()
+      require('nvim-autopairs').setup({})
       /lua
 
       colorscheme catppuccin

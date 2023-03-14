@@ -186,6 +186,7 @@
       enable = true;
       plugins = [
         { name = "hlissner/zsh-autopair"; }
+        { name = "marlonrichert/zsh-autocomplete"; }
         { name = "zsh-users/zsh-autosuggestions"; }
         { name = "zsh-users/zsh-syntax-highlighting"; }
       ];

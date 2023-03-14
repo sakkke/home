@@ -182,6 +182,12 @@
 
   programs.zsh = {
     enable = true;
+    zplug = {
+      enable = true;
+      plugins = [
+        { name = "zsh-users/zsh-autosuggestions"; }
+      ];
+    };
     initExtra = ''
       fzf-z() {
         temp="$(mktemp --suffix=fzf-z)"

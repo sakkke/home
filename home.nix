@@ -172,6 +172,7 @@
     extraConfig = ''
       return {
         color_scheme = 'Catppuccin Macchiato',
+        default_prog = {'zsh', '-l'},
         enable_tab_bar = false,
         keys = {
           {

@@ -99,6 +99,7 @@
       set list
       set number
       set relativenumber
+      set shell=zsh
       set termguicolors
       set timeoutlen=500
 

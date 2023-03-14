@@ -99,6 +99,7 @@
       set number
       set relativenumber
       set termguicolors
+      set timeoutlen=500
 
       call plug#begin()
 
@@ -107,6 +108,7 @@
       Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
       Plug 'editorconfig/editorconfig-vim'
       Plug 'liuchengxu/vim-better-default'
+      Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
       Plug 'nvim-lualine/lualine.nvim'
         Plug 'kyazdani42/nvim-web-devicons'
       Plug 'sheerun/vim-polyglot'
@@ -129,6 +131,12 @@
       /lua
 
       colorscheme catppuccin
+
+      let g:mapleader = "\<Space>"
+      let g:maplocalleader = ','
+
+      nnoremap <silent> <Leader> :<C-u>WhichKey '<Space>'<CR>
+      nnoremap <silent> <LocalLeader> :<C-u>WhichKey ','<CR>
     '';
   };
 

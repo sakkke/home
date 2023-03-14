@@ -143,6 +143,11 @@
       let g:mapleader = "\<Space>"
       let g:maplocalleader = ','
 
+      let g:floaterm_keymap_new = '<F8>'
+      let g:floaterm_keymap_prev = '<F9>'
+      let g:floaterm_keymap_next = '<F10>'
+      let g:floaterm_keymap_toggle = '<F12>'
+
       nnoremap <silent> <Leader> :<C-u>WhichKey '<Space>'<CR>
       nnoremap <silent> <LocalLeader> :<C-u>WhichKey ','<CR>
 

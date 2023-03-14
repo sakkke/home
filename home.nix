@@ -122,6 +122,7 @@
       require('bufferline').setup()
       require('catppuccin').setup({
         flavour = 'macchiato',
+        transparent_background = true,
       })
       require('lualine').setup()
       /lua

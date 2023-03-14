@@ -108,6 +108,7 @@
         Plug 'kyazdani42/nvim-web-devicons'
       Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
       Plug 'editorconfig/editorconfig-vim'
+      Plug 'lewis6991/gitsigns.nvim'
       Plug 'liuchengxu/vim-better-default'
       Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
       Plug 'nvim-lualine/lualine.nvim'
@@ -129,6 +130,7 @@
         flavour = 'macchiato',
         transparent_background = true,
       })
+      require('gitsigns').setup()
       require('lualine').setup()
       require('nvim-autopairs').setup({})
       /lua

@@ -185,6 +185,7 @@
     zplug = {
       enable = true;
       plugins = [
+        { name = "hlissner/zsh-autopair"; }
         { name = "zsh-users/zsh-autosuggestions"; }
         { name = "zsh-users/zsh-syntax-highlighting"; }
       ];

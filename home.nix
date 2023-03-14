@@ -111,6 +111,7 @@
       Plug 'lewis6991/gitsigns.nvim'
       Plug 'liuchengxu/vim-better-default'
       Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+      Plug 'lukas-reineke/indent-blankline.nvim'
       Plug 'nvim-lualine/lualine.nvim'
         Plug 'kyazdani42/nvim-web-devicons'
       Plug 'sheerun/vim-polyglot'
@@ -131,6 +132,7 @@
         transparent_background = true,
       })
       require('gitsigns').setup()
+      require('indent_blankline').setup({})
       require('lualine').setup()
       require('nvim-autopairs').setup({})
       /lua

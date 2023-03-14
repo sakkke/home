@@ -143,6 +143,9 @@
       let g:mapleader = "\<Space>"
       let g:maplocalleader = ','
 
+      let g:floaterm_height = 0.9
+      let g:floaterm_width = 0.9
+
       let g:floaterm_keymap_new = '<F8>'
       let g:floaterm_keymap_prev = '<F9>'
       let g:floaterm_keymap_next = '<F10>'

@@ -115,6 +115,7 @@
       Plug 'nvim-lualine/lualine.nvim'
         Plug 'kyazdani42/nvim-web-devicons'
       Plug 'sheerun/vim-polyglot'
+      Plug 'voldikss/vim-floaterm'
       Plug 'windwp/nvim-autopairs'
 
       call plug#end()

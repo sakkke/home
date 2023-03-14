@@ -141,6 +141,10 @@
       return {
         color_scheme = 'Catppuccin Macchiato',
         enable_tab_bar = false,
+        window_background_image = '/home/sakkke/home/waves_right_colored.png',
+        window_background_image_hsb = {
+          brightness = 0.3,
+        },
         window_padding = {
           left = 0,
           right = 0,

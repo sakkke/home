@@ -230,5 +230,8 @@
 
       bindkey '^Z' fzf-z
     '';
+    shellAliases = {
+      hs = "home-manager switch";
+    };
   };
 }

@@ -218,6 +218,14 @@
         %"$pid"
       }
 
+      nvim-sh() {
+        while :; do
+          printf 'Press press enter to launch Neovim. Or press C-c to exit.'
+          read
+          nvim "$@"
+        done
+      }
+
       zle -N fzf-z
 
       bindkey '^Z' fzf-z

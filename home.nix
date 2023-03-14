@@ -96,6 +96,7 @@
   programs.neovim = {
     enable = true;
     extraConfig = ''
+      set list
       set number
       set relativenumber
       set termguicolors
